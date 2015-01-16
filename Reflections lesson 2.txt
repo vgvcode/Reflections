@@ -1,0 +1,13 @@
+Reflections Lesson 2
+
+git init  - creates a new repository
+git status - which files have changed since the last commit
+git add - add files to staging area
+
+Q: What happens when you initialize a repository? Why do you need to do it?
+To start tracking the versions / history of changes, using git
+
+Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
+A prepare to commit area
+Help to move all the files in one commit from staging to repository
+
