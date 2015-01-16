@@ -1,0 +1,32 @@
+Reflections Lesson 1
+
+Comparing 2 files:
+
+Windows:  Use FC
+Mac / Linux:   Use diff -u
+
+Q: How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+Be able to look up changes made in the past, undo etc.
+
+Dropbox, Google Docs and Wikipedia have the ability to view previous versions
+
+
+Q: What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+Automatic saving is great if you tend to forget - great for non programmatic changes
+Manual saving is useful when you want to save at points where it makes logical sense (for example, auto save could save in the middle of a line or a function change, which can be bad for programmatic changes)
+
+Q: How can you use the commands git log and git diff to view the history of files?
+git log - log of all the commits
+git diff <commit id 1> <commit id 2> - difference between two commits
+
+git log —-stat  (stats on which file where changed in a repository between commits)
+
+git clone <repository>
+
+git checkout <commit_id>  (first 4 chars would suffice)
+
+Q: How might using version control make you more confident to make changes that could break something?
+You can always go back to a previous version using git checkout <commmit_id>  
+
+
