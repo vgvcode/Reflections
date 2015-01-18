@@ -8,6 +8,40 @@ Q: What happens when you initialize a repository? Why do you need to do it?
 To start tracking the versions / history of changes, using git
 
 Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
-A prepare to commit area
+A: prepare to commit area
 Help to move all the files in one commit from staging to repository
+
+
+Q: How can you use the staging area to make sure you have one commit per logical change?
+A: Move all the files corresponding to a logical change, one by one to staging using git add.  Then run git commit at the end to move everything from staging to repository in one commit
+
+git diff  <no arguments>  compares working directory with staging area
+git diff —-staged  compares staging area with repository
+git reset —-hard resets all changes in working directory and staging area. Non reversible
+
+git branch  (shows branches)
+git branch <branch_name>   (creates a new branch)
+git checkout <branch_name>  (checks out the named branch)
+	git add <file_name>
+	git commit
+
+Q: What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+When you want to try out something experimental or different from the normal branch
+
+git log —graph —oneline
+
+Q: How do the diagrams help you visualize the branch structure?
+Shows the way the initial version was modified to subsequent versions, possibly on different branches
+
+Concept of unreachable node:  If you make a change to a parent (not the current version) and commit, without saving in a new branch
+
+Merging
+git merge master <branch name>  (merges <branch name> with master)
+git show <commit id>  (show what merges were introduced compared to its parent)
+git branch -d <branch name>  Delete the label <branch name>, not the commits associated with it
+
+Conflict resolution: When in doubt, git always asks the user to decide on how to merge conflicts
+
+Q: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Automatic merging saves time but may not always be what you want
 
