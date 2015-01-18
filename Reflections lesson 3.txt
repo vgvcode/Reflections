@@ -6,3 +6,6 @@ Remote repository
 —git remote add origin <url>  (copy from gitHub)
 —git remote -v
 —git push origin master  (push master from local to origin on remote)
+
+Q: When would you want to use a remote repository rather than keeping all your work local?
+When you want to view your work from another computer, or share it with a co-worker
