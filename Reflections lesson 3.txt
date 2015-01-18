@@ -1,0 +1,8 @@
+Reflections Lesson 3
+
+Remote repository
+—create one in gitHub
+—git remote (on local - lists all repositories)
+—git remote add origin <url>  (copy from gitHub)
+—git remote -v
+—git push origin master  (push master from local to origin on remote)
